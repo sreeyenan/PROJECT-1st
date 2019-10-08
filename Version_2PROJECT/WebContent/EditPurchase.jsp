@@ -75,7 +75,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       </div>
       <div class="col-75">
       <div class="col-65">
-       <input type="text" name="pd_order" placeholder="Unknown type" autofocus="autofocus" value required><br>
+       <input type="text" name="pd_order" placeholder="Enter your order id" autofocus="autofocus" value required><br>
         </div>
         </div>
     </div>
@@ -108,7 +108,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       </div>
       <div class="col-75">
       <div class="col-65">
-       <input type="text" name="pd_order" placeholder="Unknown type" autofocus="autofocus" value required><br>
+       <input type="text" name="pd_qty" placeholder="Enter number" autofocus="autofocus" value required><br>
         </div>
         </div>
     </div>
@@ -182,7 +182,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
     		<input type="reset" value="Cancel">
  
     </div>
-
+</form>
 </div>
 </body>
 </html>
