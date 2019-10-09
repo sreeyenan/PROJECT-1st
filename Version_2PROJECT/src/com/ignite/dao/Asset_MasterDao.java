@@ -14,4 +14,4 @@ public interface Asset_MasterDao {
     
     Asset_Master find(int id) throws FileNotFoundException, ClassNotFoundException, IOException, SQLException;
     List<Asset_Master> findAll() throws FileNotFoundException, ClassNotFoundException, IOException, SQLException;
-}
+} 

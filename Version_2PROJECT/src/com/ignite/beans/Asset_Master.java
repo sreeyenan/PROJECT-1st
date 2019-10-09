@@ -3,7 +3,7 @@ package com.ignite.beans;
 import java.util.Date;
 
 public class Asset_Master {
-
+ 
 	Integer am_id;
 	String am_type;
 	String am_make;

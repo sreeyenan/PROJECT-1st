@@ -17,7 +17,7 @@ import com.ignite.jdbcdao.Asset_MasterJdbcDao;
  */
 public class DeleteAssetMasterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+        
     /**
      * @see HttpServlet#HttpServlet()
      */

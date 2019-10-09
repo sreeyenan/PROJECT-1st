@@ -25,7 +25,7 @@ public class Asset_MasterJdbcDao extends Dao implements Asset_MasterDao {
 
 	@Override
 	public boolean insert(Asset_Master am) throws SQLException {
-		
+		 
 		boolean res = false;
 		PreparedStatement pstmt = con.prepareStatement("INSERT INTO Asset_Master(am_type,am_make,am_model,am_snumber,am_myear,am_pdate,am_warranty,am_from,am_to,isactive) VALUES(?,?,?,?,?,?,?,?,?,'Y')");
 		pstmt.setString(1, am.getAm_type());
