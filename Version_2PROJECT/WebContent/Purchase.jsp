@@ -39,7 +39,7 @@
                     <a href="asset.jsp">Asset Details</a>                  
                     <a href="vendor.jsp">Vendor Creation</a>
                     <a href="Purchase.jsp">Purchase Order Creation</a>
-                    <a href="#">Asset Definition</a>
+                    <a href="asset_master.jsp">Asset Definition</a>
                     
 
                 </div>
@@ -70,7 +70,7 @@
        </div>
       <div class="col-75">
       <div class="col-65">
-       <input type="text" name="pd_order" placeholder="Type order id" autofocus="autofocus"  required><br>
+       <input type="text" name="pd_order" placeholder="Type order id" autofocus="autofocus"  required>
        </div>
        </div>
        </div>
@@ -100,7 +100,7 @@
       </div>
       <div class="col-75">
       <div class="col-65">
-       <input type="text" name="pd_qty" placeholder="Enter the number" autofocus="autofocus" value required><br>
+       <input type="text" name="pd_qty" placeholder="Enter the number" autofocus="autofocus" value required>
        </div>
        </div>
        </div>
@@ -132,7 +132,7 @@
      </div>
       <div class="col-75">
       <div class="col-65">
-       <input type="date" name="pd_date" placeholder="mm/dd/yyyy" required><br><br>
+       <input type="date" name="pd_date" placeholder="mm/dd/yyyy" required>
 </div>
      </div>
      </div>
@@ -143,7 +143,7 @@
       </div>
       <div class="col-75">
      <div class="col-65">
-       <input type="date" name="pd_ddate" placeholder="mm/dd/yyyy" autofocus="autofocus"required><br><br>
+       <input type="date" name="pd_ddate" placeholder="mm/dd/yyyy" autofocus="autofocus"required>
      </div>
      </div>
      </div>
@@ -155,7 +155,7 @@
     </div>
       <div class="col-75">
      
-        <select id="pd_status" name="pd_status">
+        <select id="pd_status" name="pd_status" required>
         <option selected disabled hidden>select</options>
           <option value="PO - Raised with Supplier">PO - Raised with Supplier</option>
           <option value="Awaiting Delivery by Supplier">Awaiting Delivery by Supplier</option>

@@ -31,16 +31,6 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>AssetNameServlet</display-name>
-    <servlet-name>AssetNameServlet</servlet-name>
-    <servlet-class>com.ignite.servlets.AssetNameServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>AssetNameServlet</servlet-name>
-    <url-pattern>/assetname</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
     <display-name>UpdateAssetServlet</display-name>
     <servlet-name>UpdateAssetServlet</servlet-name>
     <servlet-class>com.ignite.servlets.UpdateAssetServlet</servlet-class>
@@ -58,6 +48,16 @@
   <servlet-mapping>
     <servlet-name>Asset_detServlet</servlet-name>
     <url-pattern>/asset_det</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteAssetServlet</display-name>
+    <servlet-name>DeleteAssetServlet</servlet-name>
+    <servlet-class>com.ignite.servlets.DeleteAssetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteAssetServlet</servlet-name>
+    <url-pattern>/deleteasset</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
@@ -99,7 +99,7 @@
     <servlet-name>DeletePurchaseServlet</servlet-name>
     <url-pattern>/deletepurchase</url-pattern>
   </servlet-mapping>
-   <servlet>
+  <servlet>
     <description></description>
     <display-name>UpdatePurchaseServlet</display-name>
     <servlet-name>UpdatePurchaseServlet</servlet-name>
@@ -108,5 +108,15 @@
   <servlet-mapping>
     <servlet-name>UpdatePurchaseServlet</servlet-name>
     <url-pattern>/updatepurchase</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Asset_MasterServlet</display-name>
+    <servlet-name>Asset_MasterServlet</servlet-name>
+    <servlet-class>com.ignite.servlets.Asset_MasterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Asset_MasterServlet</servlet-name>
+    <url-pattern>/assetmaster</url-pattern>
   </servlet-mapping>
 </web-app>

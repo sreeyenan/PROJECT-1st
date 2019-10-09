@@ -40,7 +40,7 @@
                     <a href="asset.jsp">Asset Details</a>                  
                     <a href="vendor.jsp">Vendor Creation</a>
                     <a href="Purchase.jsp">Purchase Order Creation</a>
-                    <a href="#">Asset Definition</a>
+                    <a href="asset_master.jsp">Asset Definition</a>
 
                 </div>
             </li>
@@ -110,7 +110,7 @@
     </div>
     
     
-    <div class="col" style="width: 200%; margin-top: 35px;margin-left:500; height: 10px; ">
+    <div class="col">
     <input type="submit" value="Submit">
     </div>
 </form>

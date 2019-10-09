@@ -75,7 +75,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       </div>
       <div class="col-75">
       <div class="col-65">
-       <input type="text" name="pd_order" placeholder="Enter your order id" autofocus="autofocus" value required><br>
+      <input type="text" name="pd_order" value="<%= purchase_det.getPd_order()%>" readonly="readonly">
         </div>
         </div>
     </div>
@@ -83,11 +83,11 @@ if(request.getMethod().equalsIgnoreCase("get")){
     
     <div class="row">
       <div class="col-25">
-        <label for="ad_type">Purchase type</label>
+        <label for="pd_type">Purchase type</label>
       </div>
       <div class="col-75">
       <select id="pd_type" name="pd_type">
-        <option selected disabled hidden>select</options>
+        <option selected value="0" disabled="disabled"><%= purchase_det.getPd_type() %></option>
           <option value="Laptop">Laptop</option>
           <option value="Mobile Charger">Mobile Charger</option>
           <option value="Printer Charger">Printer Charger</option>
@@ -108,7 +108,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       </div>
       <div class="col-75">
       <div class="col-65">
-       <input type="text" name="pd_qty" placeholder="Enter number" autofocus="autofocus" value required><br>
+       <input type="text" name="pd_qty" value="<%= purchase_det.getPd_qty()%>" readonly="readonly">
         </div>
         </div>
     </div>
@@ -120,7 +120,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       <div class="col-75">
       
         <select id="pd_vendor" name="pd_vendor">
-        <option selected disabled hidden>select</options>
+        <option selected value="0" disabled="disabled"><%= purchase_det.getPd_vendor() %></option>
           <option value="Samsung">Samsung</option>
           <option value="MI">MI</option>
           <option value="Vivo">Vivo</option>
@@ -140,7 +140,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       </div>
       <div class="col-75">
       <div class="col-65">
-       <input type="date" name="pd_date" placeholder="mm/dd/yyyy" required><br><br>
+       <input type="date" name="pd_date" value="<%= purchase_det.getPd_date()%>" readonly="readonly">
 
         </div>
         </div>
@@ -152,7 +152,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       </div>
       <div class="col-75">
       <div class="col-65">
-       <input type="date" name="pd_ddate" placeholder="mm/dd/yyyy" autofocus="autofocus"required><br><br>
+       <input type="date" name="pd_ddate" value="<%= purchase_det.getPd_ddate()%>" readonly="readonly">
         </div>
         </div>
     </div>
@@ -164,7 +164,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       <div class="col-75">
       
         <select id="pd_status" name="pd_status">
-        <option selected disabled hidden>select</options>
+        <option selected value="0" disabled="disabled"><%= purchase_det.getPd_status() %></option>
           <option value="PO - Raised with Supplier">PO - Raised with Supplier</option>
           <option value="Awaiting Delivery by Supplier">Awaiting Delivery by Supplier</option>
           <option value="Consignment Received">Consignment Received</option>

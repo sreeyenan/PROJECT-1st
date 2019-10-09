@@ -39,7 +39,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
                     <a href="asset.jsp">Asset Details</a>                  
                     <a href="vendor.jsp">Vendor Creation</a>
                     <a href="Purchase.jsp">Purchase Order Creation</a>
-                    <a href="#">Asset Definition</a>
+                    <a href="asset_master.jsp">Asset Definition</a>
                     
 
                 </div>
@@ -77,7 +77,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       <div class="col-75">
       
         <select id="vd_name" name="vd_name">
-        <option selected disabled hidden>select</options>
+        <option selected value="0" disabled="disabled"><%= vendor_det.getVd_name() %></option>
         <option value="Samsung">Samsung</option>
 	    <option value="MI">MI</option>
 	    <option value=" Vivo"> Vivo</option>
