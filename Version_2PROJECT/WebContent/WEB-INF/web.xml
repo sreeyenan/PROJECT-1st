@@ -119,4 +119,24 @@
     <servlet-name>Asset_MasterServlet</servlet-name>
     <url-pattern>/assetmaster</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteAsset_MasterServlet</display-name>
+    <servlet-name>DeleteAsset_MasterServlet</servlet-name>
+    <servlet-class>com.ignite.servlets.DeleteAsset_MasterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteAsset_MasterServlet</servlet-name>
+    <url-pattern>/deleteassetmaster</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateAssetMasterServlet</display-name>
+    <servlet-name>UpdateAssetMasterServlet</servlet-name>
+    <servlet-class>com.ignite.servlets.UpdateAssetMasterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateAssetMasterServlet</servlet-name>
+    <url-pattern>/updateAssetmaster</url-pattern>
+  </servlet-mapping>
 </web-app>
