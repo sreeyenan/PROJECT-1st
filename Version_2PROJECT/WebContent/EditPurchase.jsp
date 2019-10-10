@@ -140,7 +140,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       </div>
       <div class="col-75">
       <div class="col-65">
-       <input type="date" name="pd_date" value="<%= purchase_det.getPd_date()%>" readonly="readonly">
+       <input type="date" name="pd_date">
 
         </div>
         </div>
@@ -152,7 +152,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       </div>
       <div class="col-75">
       <div class="col-65">
-       <input type="date" name="pd_ddate" value="<%= purchase_det.getPd_ddate()%>" readonly="readonly">
+       <input type="date" name="pd_ddate">
         </div>
         </div>
     </div>

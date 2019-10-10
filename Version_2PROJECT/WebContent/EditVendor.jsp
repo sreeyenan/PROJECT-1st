@@ -108,7 +108,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       </div>
       <div class="col-75">
       <select id="vd_atype" name="vd_atype">
-        <option selected disabled hidden>select</options>
+        <option selected value="0" disabled="disabled"><%= vendor_det.getVd_atype() %></option>
 	    <option value="Mobile">Mobile</option>
 	    <option value="Thermal Printer">Thermal Printer</option>
 	    <option value="Sensor"> Sensor</option>
@@ -125,7 +125,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       </div>
       <div class="col-75">
       
-           <input type="date" name="vd_from" placeholder="mm/dd/yyyy" required><br><br>
+           <input type="date" name="vd_from">
        
     </div>
     </div>
@@ -137,7 +137,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       <div class="col-75">
       
         
-          <input type="date" name="vd_to" placeholder="mm/dd/yyyy" required><br><br>
+          <input type="date" name="vd_to" >
         
     </div>
     </div>
@@ -148,7 +148,7 @@ if(request.getMethod().equalsIgnoreCase("get")){
       </div>
       <div class="col-75">
      
-        <input type="text" name="vd_addr" placeholder="Enter Address" autofocus="autofocus" value required><br>
+        <input type="text" name="vd_addr" value="<%= vendor_det.getVd_addr()%>">
         
         
     </div>

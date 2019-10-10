@@ -60,7 +60,7 @@
     </nav>
 <div class="container" style="margin-top: 10px;">
   <form method="POST">
-  <h2 align ="center">Asset Master </h2>
+  <h2 align ="center">Asset Definition </h2>
     <div class="row">
       <div class="col-25">
         <label for="country">Asset Master Type</label>
@@ -217,7 +217,7 @@ for(Asset_Master asset_master : asset_masters){
 <td><%= asset_master.getAm_to() %></td>
 <td>
 					<a href="EditassetMaster.jsp?am_id=<%=asset_master.getAm_id()%>">Edit</a>|
-					<a href="deletepurchase?am_id=<%=asset_master.getAm_id()%>">Delete</a>
+					<a href="deleteassetmaster?am_id=<%=asset_master.getAm_id()%>">Delete</a>
 </td>
 </tr>
 <%

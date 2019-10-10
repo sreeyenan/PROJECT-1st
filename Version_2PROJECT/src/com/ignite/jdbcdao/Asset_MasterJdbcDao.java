@@ -62,6 +62,7 @@ public class Asset_MasterJdbcDao extends Dao implements Asset_MasterDao {
 		Connection con = null;
 		Statement stmt = null;
 		ResultSet rs = null;
+		ResultSet rs1 = null;
 		DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 		try{
 			con = getConnection();
@@ -81,6 +82,17 @@ public class Asset_MasterJdbcDao extends Dao implements Asset_MasterDao {
 				asset_master.setAm_from(rs.getString("am_from"));
 				asset_master.setAm_to(rs.getString("am_to"));
 			}
+			rs1 = stmt.executeQuery("SELECT am_pdate,am_from,am_to FROM asset_master where isactive='Y'");
+			String str1=df.format("am_pdate");
+			String str2=df.format("am_from");
+			String str3=df.format("am_to");
+			if(rs.next()){
+				asset_master.setAm_pdate(rs1.getString(str1));
+				asset_master.setAm_from(rs1.getString(str2));
+					asset_master.setAm_to(rs1.getString(str3));}
+		}
+		catch(IllegalArgumentException e){
+			e.printStackTrace();
 		}
 		finally{
 			try{
@@ -151,9 +163,6 @@ public class Asset_MasterJdbcDao extends Dao implements Asset_MasterDao {
 				asset_master.setAm_myear(rs.getString("am_myear"));
 				
 				asset_master.setAm_warranty(rs.getString("am_warranty"));
-				asset_master.setAm_from(rs.getString(df.format("")));
-				asset_master.setAm_to(rs.getString(df.format("")));
-				
 				asset_masters.add(asset_master);
 			}
 			rs1 = stmt.executeQuery("SELECT am_pdate,am_from,am_to FROM asset_master where isactive='Y'");

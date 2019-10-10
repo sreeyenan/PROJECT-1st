@@ -61,16 +61,6 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>Purchase_detServlet</display-name>
-    <servlet-name>Purchase_detServlet</servlet-name>
-    <servlet-class>com.ignite.servlets.Purchase_detServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Purchase_detServlet</servlet-name>
-    <url-pattern>/Purchase_detServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
     <display-name>Purchase_DetServlet</display-name>
     <servlet-name>Purchase_DetServlet</servlet-name>
     <servlet-class>com.ignite.servlets.Purchase_DetServlet</servlet-class>
@@ -121,15 +111,15 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>DeleteAsset_MasterServlet</display-name>
-    <servlet-name>DeleteAsset_MasterServlet</servlet-name>
-    <servlet-class>com.ignite.servlets.DeleteAsset_MasterServlet</servlet-class>
+    <display-name>DeleteAssetMasterServlet</display-name>
+    <servlet-name>DeleteAssetMasterServlet</servlet-name>
+    <servlet-class>com.ignite.servlets.DeleteAssetMasterServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>DeleteAsset_MasterServlet</servlet-name>
+    <servlet-name>DeleteAssetMasterServlet</servlet-name>
     <url-pattern>/deleteassetmaster</url-pattern>
   </servlet-mapping>
-  <servlet>
+   <servlet>
     <description></description>
     <display-name>UpdateAssetMasterServlet</display-name>
     <servlet-name>UpdateAssetMasterServlet</servlet-name>
@@ -137,6 +127,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>UpdateAssetMasterServlet</servlet-name>
-    <url-pattern>/updateAssetmaster</url-pattern>
+    <url-pattern>/updateassetmaster</url-pattern>
   </servlet-mapping>
 </web-app>
